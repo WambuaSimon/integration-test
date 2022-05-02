@@ -13,8 +13,8 @@ cd ..
 git clone -b stable https://github.com/flutter/flutter.git
 export PATH=`pwd`/flutter/bin:$PATH
 
-flutter channel stable
-flutter doctor
+#flutter channel stable
+#flutter doctor
 flutter build apk --release
 
 # copy the APK where AppCenter will find it
