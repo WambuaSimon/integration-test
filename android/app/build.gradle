@@ -50,7 +50,7 @@ android {
     signingConfigs {
         release {
             storeFile rootProject.file("app/android.keystore")
-            storePassword System.getenv("APPCENTER_KEYSTORE_PASSWORD")
+            storePassword "Simon433!"
             keyAlias "alias"
             keyPassword "Simon433!"
         }
