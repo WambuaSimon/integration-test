@@ -43,15 +43,15 @@ android {
         targetSdkVersion 29
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
-        versionCode System.getenv('APPCENTER_BUILD_ID').toInteger()
+        versionCode 1
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     signingConfigs {
         release {
-            storeFile rootProject.file("app/android.keystore")
+            storeFile rootProject.file("app/keystore.jks")
             storePassword "Simon433!"
-            keyAlias "alias"
+            keyAlias "key0"
             keyPassword "Simon433!"
         }
     }
